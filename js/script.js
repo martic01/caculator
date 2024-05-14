@@ -39,7 +39,9 @@ function deductBy30(num) {
     return parseInt(num) - 30;
 }
 
-
+function clear(num) {
+    return parseInt(num) * 0;
+}
 
 
 $(document).ready(function () {
@@ -103,6 +105,12 @@ $(document).ready(function () {
         $("#fvalue").val(solvedValue);
     });
 
+    $("#clear").click(function () {
+        let defaultValue = $("#fvalue").val();
+        let solvedValue = clear(defaultValue);
+        $("#fvalue").val(solvedValue);
+    });
 
 });
+
 

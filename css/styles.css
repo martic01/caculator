@@ -4,7 +4,6 @@
     box-sizing: border-box;
 
 }
-
 body {
     display: flex;
     justify-content: center;
@@ -12,6 +11,118 @@ body {
     height: 700px;
     background-color: rgb(22, 20, 20);
 }
+
+@media only screen and (max-width:600px) {
+
+    .cal-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 230px;
+        height: 390px;
+        border: none;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 12px 1px white;
+    
+    
+    }
+
+    .screen {
+        margin-top: 20px;
+        text-align: center;
+        width: 180px;
+        height: 20%;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        font-size: 30px;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .screen:hover {
+        cursor: pointer;
+    
+    }
+    
+    .button-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        height: 80%;
+        width: 210px;
+    
+    }
+    
+    .mn-btn {
+        display: flex;
+        gap: 5px;
+        height: 80%;
+        width: 210px;
+    
+    }
+    
+    .btns {
+        text-align: center;
+        height: 30px;
+        width: 40px;
+        border-radius: 7px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        border: none;
+        box-shadow: 0 0 5px 0.5px white;
+    
+    }
+    
+    .btns:hover {
+        box-shadow: 0 0 10px 2px white;
+        height: 32px;
+        width: 42px;
+        cursor: pointer;
+    }
+    
+    .btns:active {
+        box-shadow: 0 0 7px 0.5px white;
+        height: 30px;
+        width: 40px;
+        background-color: rgb(63, 62, 62);
+        color: rgb(240, 194, 194);
+    }
+    
+    #clear {
+        height: 200px;
+        width: 30px;
+        border-radius: 7px;
+        background-color: grey;
+        box-shadow: 0 0 5px 0.5px white;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+    
+    #clear:hover {
+        box-shadow: 0 0 10px 2px white;
+        height: 200px;
+        width: 31px;
+        cursor: pointer;
+    }
+    
+    #clear:active {
+        box-shadow: 0 0 5px 0.5px white;
+        height: 200px;
+        width: 30px;
+        background-color: rgb(95, 94, 94);
+        color: rgb(240, 194, 194);
+    }
+
+}
+
+@media only screen and (min-width:601px) {
 
 .cal-body {
     display: flex;
@@ -29,12 +140,9 @@ body {
 
 }
 
-#screen {
+.screen {
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 500px;
     height: 20%;
     border: none;
@@ -44,10 +152,12 @@ body {
     font-weight: 800;
     color: black;
 }
-#screen:hover {
+
+.screen:hover {
     cursor: pointer;
 
 }
+
 .button-div {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +196,14 @@ body {
     cursor: pointer;
 }
 
+.btns:active {
+    box-shadow: 0 0 7px 0.5px white;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(63, 62, 62);
+    color: rgb(240, 194, 194);
+}
+
 #clear {
     height: 233px;
     width: 70px;
@@ -96,10 +214,20 @@ body {
     font-size: 15px;
     border: none;
 }
+
 #clear:hover {
     box-shadow: 0 0 10px 2px white;
-    height: 230px;
+    height: 234px;
     width: 71px;
     cursor: pointer;
 }
 
+#clear:active {
+    box-shadow: 0 0 5px 0.5px white;
+    height: 233px;
+    width: 70px;
+    background-color: rgb(75, 74, 74);
+    color: rgb(240, 194, 194);
+}
+
+}

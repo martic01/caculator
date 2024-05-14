@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 700px;
-    background-color: rgb(34, 32, 32);
+    background-color: rgb(22, 20, 20);
 }
 
 .cal-body {
@@ -24,7 +24,7 @@ body {
     border: none;
     background-color: black;
     border-radius: 10px;
-    box-shadow: 0 0 7px 3px white;
+    box-shadow: 0 0 12px 1px white;
 
 
 }
@@ -72,7 +72,15 @@ body {
     color: white;
     font-size: 15px;
     border: none;
-    box-shadow: 0 0 7px 1px white;
+    box-shadow: 0 0 5px 0.5px white;
+
+}
+
+.btns:hover {
+    box-shadow: 0 0 10px 2px white;
+    height: 52px;
+    width: 102px;
+    cursor: pointer;
 }
 
 #clear {
@@ -80,8 +88,15 @@ body {
     width: 70px;
     border-radius: 7px;
     background-color: grey;
-    box-shadow: 0 0 7px 1px white;
+    box-shadow: 0 0 5px 0.5px white;
     color: white;
     font-size: 15px;
     border: none;
 }
+#clear:hover {
+    box-shadow: 0 0 10px 2px white;
+    height: 230px;
+    width: 71px;
+    cursor: pointer;
+}
+

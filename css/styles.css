@@ -10,6 +10,8 @@ body {
     align-items: center;
     height: 700px;
     background-color: rgb(22, 20, 20);
+    gap: 30px;
+
 }
 
 @media only screen and (max-width:600px) {
@@ -28,8 +30,20 @@ body {
         box-shadow: 0 0 12px 1px white;
     
     
+        animation: slidein4 1s linear forwards;
     }
-
+    .hide-cal{
+    display: none;
+    }
+    
+    @keyframes slidein4 {
+        from{
+           transform: translateX(-150px);
+        }
+       t0 {
+           transform: translateX(150px);
+       }
+       }
     .screen {
         margin-top: 20px;
         text-align: center;
@@ -41,7 +55,20 @@ body {
         font-size: 30px;
         font-weight: 800;
         color: black;
+
+        animation: slidein 2s linear forwards;
+
     }
+    
+    @keyframes slidein {
+     from{
+        transform: translateY(-170px);
+     }
+    t0 {
+        transform: translateY(170px);
+    }
+    }
+    
     
     .screen:hover {
         cursor: pointer;
@@ -55,14 +82,64 @@ body {
         gap: 10px;
         height: 80%;
         width: 210px;
-    
+  
+    animation: slidein2 2s linear forwards;
+
+}
+
+@keyframes slidein2 {
+    from{
+       transform: translateY(160px);
     }
-    
+   t0 {
+       transform: translateY(-160px);
+   }
+   }
     .mn-btn {
         display: flex;
         gap: 5px;
         height: 80%;
         width: 210px;
+    
+    }
+    .btn {
+        height: 300px;
+        width: 70px;
+        border-radius: 250px;
+        background-color: rgb(3, 3, 3);
+        color: rgb(90, 73, 190);
+        font-size: 17px;
+        font-weight: 700;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: none;
+        box-shadow: 0 0 12px 1px white;
+    
+    }
+    .btn span{
+        color: red;
+        font-size:15px ;
+    
+    }
+    #hide{
+        display: none;
+        color: rgb(224, 63, 63);
+    }
+    #hide:hover{
+    
+        color: red;
+    }
+    .btn:hover{
+        box-shadow: 0 0 17px 2px white;
+        cursor: pointer;
+        
+    }
+    .btn:active{
+      background-color: rgb(26, 24, 24);
+        
+    }
+    .btn span:hover{
+        color: rgb(228, 39, 39);
+        cursor: pointer;
     
     }
     
@@ -103,7 +180,20 @@ body {
         color: white;
         font-size: 15px;
         border: none;
+   
+        animation: slidein3 2s linear forwards;
     }
+    
+    @keyframes slidein3 {
+        from{
+           transform: translateX(100px);
+        }
+       t0 {
+           transform: translateX(-100px);
+       }
+       }
+    
+    
     
     #clear:hover {
         box-shadow: 0 0 10px 2px white;
@@ -125,7 +215,7 @@ body {
 @media only screen and (min-width:601px) {
 
 .cal-body {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -136,9 +226,24 @@ body {
     background-color: black;
     border-radius: 10px;
     box-shadow: 0 0 12px 1px white;
+    
 
-
+    animation: slidein4 1s linear forwards;
 }
+.hide-cal{
+display: none;
+}
+
+@keyframes slidein4 {
+    from{
+       transform: translateX(-150px);
+    }
+   t0 {
+       transform: translateX(150px);
+   }
+   }
+   
+
 
 .screen {
     margin-top: 20px;
@@ -151,7 +256,21 @@ body {
     font-size: 30px;
     font-weight: 800;
     color: black;
+
+
+animation: slidein 2s linear forwards;
+
 }
+
+@keyframes slidein {
+ from{
+    transform: translateY(-170px);
+ }
+t0 {
+    transform: translateY(170px);
+}
+}
+
 
 .screen:hover {
     cursor: pointer;
@@ -166,7 +285,18 @@ body {
     height: 80%;
     width: 500px;
 
+    animation: slidein2 2s linear forwards;
+
 }
+
+@keyframes slidein2 {
+    from{
+       transform: translateY(160px);
+    }
+   t0 {
+       transform: translateY(-160px);
+   }
+   }
 
 .mn-btn {
     display: flex;
@@ -175,7 +305,59 @@ body {
     width: 500px;
 
 }
+.btn {
+    height: 300px;
+    width: 500px;
+    border-radius: 150px;
+    background-color: rgb(3, 3, 3);
+    color: rgb(90, 73, 190);
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    box-shadow: 0 0 12px 1px white;
 
+}
+.start2 {
+    height: 450px;
+    width: 300px;
+    border-radius: 250px;
+    background-color: rgb(3, 3, 3);
+    color: rgb(90, 73, 190);
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    box-shadow: 0 0 12px 1px white;
+
+}
+.btn span{
+    color: red;
+    font-size:30px ;
+
+}
+#hide{
+    display: none;
+    color: rgb(224, 63, 63);
+}
+#hide:hover{
+
+    color: red;
+}
+.btn:hover{
+    box-shadow: 0 0 17px 2px white;
+    cursor: pointer;
+    
+}
+.btn:active{
+  background-color: rgb(26, 24, 24);
+    
+}
+.btn span:hover{
+    color: rgb(228, 39, 39);
+    cursor: pointer;
+
+}
 .btns {
     text-align: center;
     height: 50px;
@@ -213,7 +395,19 @@ body {
     color: white;
     font-size: 15px;
     border: none;
+
+    animation: slidein3 2s linear forwards;
 }
+
+@keyframes slidein3 {
+    from{
+       transform: translateX(100px);
+    }
+   t0 {
+       transform: translateX(-100px);
+   }
+   }
+
 
 #clear:hover {
     box-shadow: 0 0 10px 2px white;
@@ -228,6 +422,7 @@ body {
     width: 70px;
     background-color: rgb(75, 74, 74);
     color: rgb(240, 194, 194);
+    
 }
 
 }

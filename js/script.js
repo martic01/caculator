@@ -18,6 +18,11 @@ function increaseBy25(num) {
     return parseInt(num) + 25;
 }
 
+function increaseBy30(num) {
+    return parseInt(num) + 30;
+}
+
+
 function deductBy5(num) {
     return parseInt(num) - 5;
 }
@@ -26,14 +31,18 @@ function deductBy10(num) {
     return parseInt(num) - 10;
 }
 
-function deductBy18(num) {
-    return parseInt(num) - 18;
+function deductBy15(num) {
+    return parseInt(num) - 15;
 }
+
+function deductBy20(num) {
+    return parseInt(num) - 20;
+}
+
 
 function deductBy25(num) {
     return parseInt(num) - 25;
 }
-
 
 function deductBy30(num) {
     return parseInt(num) - 30;
@@ -42,6 +51,7 @@ function deductBy30(num) {
 function clear(num) {
     return parseInt(num) * 0;
 }
+
 
 
 $(document).ready(function () {
@@ -78,28 +88,39 @@ $(document).ready(function () {
 
     $(".num6").click(function () {
         let defaultValue = $("#fvalue").val();
-        let solvedValue = deductBy5(defaultValue);
+        let solvedValue = increaseBy30(defaultValue);
         $("#fvalue").val(solvedValue);
     });
 
     $(".num7").click(function () {
         let defaultValue = $("#fvalue").val();
-        let solvedValue = deductBy10(defaultValue);
+        let solvedValue = deductBy5(defaultValue);
         $("#fvalue").val(solvedValue);
     });
 
     $(".num8").click(function () {
         let defaultValue = $("#fvalue").val();
-        let solvedValue = deductBy18(defaultValue);
+        let solvedValue = deductBy10(defaultValue);
         $("#fvalue").val(solvedValue);
     });
 
     $(".num9").click(function () {
         let defaultValue = $("#fvalue").val();
+        let solvedValue = deductBy15(defaultValue);
+        $("#fvalue").val(solvedValue);
+    });
+
+    $(".num10").click(function () {
+        let defaultValue = $("#fvalue").val();
+        let solvedValue = deductBy20(defaultValue);
+        $("#fvalue").val(solvedValue);
+    });
+    $(".num11").click(function () {
+        let defaultValue = $("#fvalue").val();
         let solvedValue = deductBy25(defaultValue);
         $("#fvalue").val(solvedValue);
     });
-    $(".num10").click(function () {
+    $(".num12").click(function () {
         let defaultValue = $("#fvalue").val();
         let solvedValue = deductBy30(defaultValue);
         $("#fvalue").val(solvedValue);
@@ -110,7 +131,16 @@ $(document).ready(function () {
         $("#fvalue").val(solvedValue);
     });
     
-    
+    $(".start").click(function () {
+    $("#show").toggle();
+    $("#hide").toggle();
+    $(".hide-cal").toggle();
 
 });
+
+});
+
+
+
+
 
